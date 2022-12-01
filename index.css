@@ -21,8 +21,8 @@ body {
   width: 100%;
   align-items: stretch;
   justify-content: stretch;
-  border-top: 0.75vh solid yellow;
-  border-bottom: 0.75vh dashed white;
+  border-top: 0.5vh solid yellow;
+  border-bottom: 0.5vh dashed white;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
@@ -103,8 +103,8 @@ body {
 .bottom_lane {
   height: 9vh;
   width: 100%;
-  border-top: 0.75vh solid rgba(0, 0, 0, 0);
-  border-bottom: 0.75vh solid yellow;
+  border-top: 0.5vh solid rgba(0, 0, 0, 0);
+  border-bottom: 0.5vh solid yellow;
 }
 
 .spacer {
