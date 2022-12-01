@@ -49,6 +49,7 @@ body {
 
 .work_zone:hover {
   transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio_img {
@@ -58,7 +59,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 6vh;
-  pointer-events: none;
 }
 
 .top_lane {
@@ -153,15 +153,26 @@ body {
 }
 
 .projects {
-
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
 }
 
 .project_card {
-  
+  height: 27vh;
+  width: 150vh;
+  margin-bottom: 75px;
+  transition: all .2s ease-in-out;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 3vw;
+}
+
+.project_card:hover {
+  transform: scale(1.025);
 }
 
 .seeya {
-  padding-top: 2.05vh;
   width: 45vh;
   margin: 0 auto;
   position: relative;
@@ -171,7 +182,7 @@ body {
 }
 
 .seeya_section {
-  height: 19.4vh;
+  height: 16.5vh;
   width: 100%;
   border-bottom: 0.5vh solid rgba(255, 255, 255, 0.25);
 }
