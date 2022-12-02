@@ -195,21 +195,23 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 7vh;
 }
 
 .project_card {
   transition: all .2s ease-in-out;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  margin-top: 5vh;
+  margin-top: 7vh;
   margin-bottom: 1vh;
   flex: 1;
-  width: 50%;
+  width: 40%;
   background-color: transparent;
-  outline: 5px solid #2c3e50;
-  color: #2c3e50;
+  outline: 4px solid rgba(255, 255, 255, 0.25);
   user-select: none;
   cursor: pointer;
+  z-index: 1;
+  color: white;
 }
 
 .project_card:hover {
@@ -219,7 +221,13 @@ body {
 .hidden {
   padding-top: 4.5vh;
   display: none;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.5s ease;
+}
+
+.project_view {
+  left: 5%;
+  right: 5%;
+  width: 95vw;
 }
 
 .development_img {
