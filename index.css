@@ -29,13 +29,29 @@ body {
 }
 
 .police {
-  width: 10vh;
+  width: 19vh;
   margin: 0 auto;
   position: absolute;
   left: 7%;
-  top: 5vh;
-  transform: rotate(-45deg);
-  pointer-events: none;
+  top: 5.6vh;
+  animation-name: policeCar;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
+@keyframes policeCar {
+  0% {}
+  10% {transform: rotate(-45deg);}
+  20% {top: 19vh;}
+  75% {transform: rotate(-45deg);}
+  76% {top: 19vh;}
+  77% {left: 120%;}
+  78% {top: -100%;}
+  79% {left: -100%;}
+  80% {top: 19vh;}
+  100% {}
 }
 
 .work_zone {
@@ -59,6 +75,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 6vh;
+  pointer-events: none;
 }
 
 .top_lane {
@@ -71,7 +88,7 @@ body {
   width: 17vh;
   position: relative;
   animation-name: moveCar1;
-  animation-duration: 5s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   pointer-events: none;
@@ -87,7 +104,7 @@ body {
   width: 17vh;
   position: relative;
   animation-name: moveCar2;
-  animation-duration: 5s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   pointer-events: none;
@@ -108,7 +125,7 @@ body {
 }
 
 .spacer {
-  height: 7vh;
+  height: 8vh;
 }
 
 .new_lane {
@@ -138,7 +155,7 @@ body {
 
 .work {
   padding-top: 2vh;
-  width: 20.9vh;
+  width: 27.4vh;
   margin: 0 auto;
   position: relative;
   left: 50%;
@@ -159,9 +176,8 @@ body {
 }
 
 .project_card {
-  height: 27vh;
+  height: 50vh;
   width: 150vh;
-  margin-bottom: 75px;
   transition: all .2s ease-in-out;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -170,6 +186,29 @@ body {
 
 .project_card:hover {
   transform: scale(1.025);
+}
+
+.development_img {
+  margin-top: 1vh;
+  width: 60vh;
+  border-radius: 10px;
+}
+
+.iterative_img {
+  margin-top: 1vh;
+  width: 40vh;
+  border-radius: 10px;
+}
+
+.swipe_img {
+  margin-top: 2vh;
+  width: 30vh;
+}
+
+.ethanol_img {
+  margin-top: 1.25vh;
+  width: 13vh;
+  border-radius: 10px;
 }
 
 .seeya {
