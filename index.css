@@ -145,7 +145,7 @@ body {
   padding-top: 1.9vh;
   width: 35vh;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
@@ -155,6 +155,22 @@ body {
   height: 13.6vh;
   width: 100%;
   border-bottom: 0.5vh solid rgba(255, 255, 255, 0.25);
+}
+
+.light1 {
+  width: 9vh;
+  left: 10%;
+  top: 4.6vh;
+  position: relative;
+  pointer-events: none;
+}
+
+.light2 {
+  width: 9vh;
+  left: 80%;
+  top: 4.6vh;
+  position: relative;
+  pointer-events: none;
 }
 
 .work {
@@ -260,9 +276,25 @@ body {
 .seeya {
   width: 45vh;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.stop1 {
+  width: 9vh;
+  left: 10%;
+  top: 7.5vh;
+  position: relative;
+  pointer-events: none;
+}
+
+.stop2 {
+  width: 9vh;
+  left: 80%;
+  top: 7.5vh;
+  position: relative;
   pointer-events: none;
 }
 
