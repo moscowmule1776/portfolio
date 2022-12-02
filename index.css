@@ -6,13 +6,16 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   background-color: #2c3e50;
   color: white;
   user-select: none;
+}
+
+.hide_x_overflow {
+  overflow-x: hidden;
 }
 
 .road {
@@ -24,7 +27,6 @@ body {
   justify-content: stretch;
   border-top: 0.5vh solid yellow;
   border-bottom: 0.5vh dashed white;
-  overflow: hidden;
   margin: 0 auto;
   position: relative;
 }
@@ -124,7 +126,6 @@ body {
   width: 100%;
   border-top: 0.5vh solid rgba(0, 0, 0, 0);
   border-bottom: 0.5vh solid yellow;
-  overflow: hidden;
 }
 
 .spacer {
