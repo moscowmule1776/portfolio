@@ -35,7 +35,7 @@ body {
   left: 7%;
   top: 5.6vh;
   animation-name: policeCar;
-  animation-duration: 8s;
+  animation-duration: 7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 4s;
@@ -164,6 +164,24 @@ body {
   pointer-events: none;
 }
 
+.cone1 {
+  padding-top: 5.9vh;
+  width: 7vh;
+  margin: 0 auto;
+  position: absolute;
+  left: 10%;
+  pointer-events: none;
+}
+
+.cone2 {
+  padding-top: 5.9vh;
+  width: 7vh;
+  margin: 0 auto;
+  position: absolute;
+  right: 10%;
+  pointer-events: none;
+}
+
 .work_section {
   height: 12.9vh;
   width: 100%;
@@ -180,37 +198,52 @@ body {
   transition: all .2s ease-in-out;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  margin-top: 1vh;
-  margin-bottom: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
   flex: 1;
-  width: 40%;
+  width: 50%;
+  background-color: transparent;
+  outline: 5px solid #2c3e50;
+  color: #2c3e50;
+  user-select: none;
+  cursor: pointer;
 }
 
 .project_card:hover {
   transform: scale(1.025);
 }
 
+.hidden {
+  padding-top: 4.5vh;
+  display: none;
+  transition: max-height 0.2s ease-out;
+}
+
 .development_img {
   margin-top: 1vh;
   width: 100vh;
   border-radius: 10px;
+  pointer-events: none;
 }
 
 .iterative_img {
   margin-top: 1vh;
   width: 100vh;
   border-radius: 10px;
+  pointer-events: none;
 }
 
 .swipe_img {
   margin-top: 2vh;
   width: 50vh;
+  pointer-events: none;
 }
 
 .ethanol_img {
   margin-top: 1.25vh;
   width: 30vh;
   border-radius: 10px;
+  pointer-events: none;
 }
 
 .seeya {

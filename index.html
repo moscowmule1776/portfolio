@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="index.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -38,49 +39,68 @@
         systems and security. I'm very passionate about the automotive industry
         and enjoy developing products for vehicles both on the software and
         hardware side of things. Outside development, working on, modifying,
-        and racing cars are the main things I do in my free time.
+        and racing cars are the main things I do during my free time!
       </h2>
     </div>
 
     <div id="work" class="work_section">
+      <img class="cone1" src="images/cone.png">
       <img class="work" src="images/work.png">
+      <img class="cone2" src="images/cone.png">
     </div>
-    <div style="background-color: rgba(255, 255, 255, 0.25);" class="new_lane">
+    <div style="background-color: rgba(255, 255, 255, 0.25); padding-bottom: 0px; padding-top: 0px;" class="new_lane">
       <center>
       <div class="projects">
 
         <div class="project_card">
-          <h1 style="margin-top: 2vh;">Development</h1>
-          <h3 style="margin-bottom: 2vh;">React webpage with content filtering and sorting</h3>
+          <a style="color: inherit; text-decoration: inherit;" href="javascript: showHidden('dev_hidden');">
+            <h1 style="margin-top: 2vh;">Development</h1>
+            <h3 style="margin-bottom: 2vh;">React webpage with content filtering and sorting</h3>
+          </a>
         </div>
-        <img class="development_img" src="images/development.png">
-        <div class="spacer"></div>
+        <div id="dev_hidden" class="hidden">
+          <img class="development_img" src="images/development.png">
+          <p>This is a test...</p>
+        </div>
 
         <div class="project_card">
-          <h1 style="margin-top: 2vh;">Iterative Design</h1>
-          <h3 style="margin-bottom: 2vh;">Improving a webpage designed for a startup based on feedback</h3>
+          <a style="color: inherit; text-decoration: inherit;" href="javascript: showHidden('eth_hidden');">
+            <h1 style="margin-top: 2vh;">Ethanol</h1>
+            <h3 style="margin-bottom: 2vh;">iOS application that connects to hardware over Bluetooth</h3>
+          </a>
         </div>
-        <img class="iterative_img" src="images/iterative.png">
-        <div class="spacer"></div>
+        <div id="eth_hidden" class="hidden">
+          <img style="margin-bottom: 3vh;" class="ethanol_img" src="images/ethanol.png">
+          <p>This is a test...</p>
+        </div>
 
         <div class="project_card">
-          <h1 style="margin-top: 2vh;">Personas and Storyboarding</h1>
-          <h3 style="margin-bottom: 2vh;">Brown's building swipe interfaces analyzed</h3>
+          <a style="color: inherit; text-decoration: inherit;" href="javascript: showHidden('id_hidden');">
+            <h1 style="margin-top: 2vh;">Iterative Design</h1>
+            <h3 style="margin-bottom: 2vh;">Improving a webpage designed for a startup based on feedback</h3>
+          </a>
         </div>
-        <img class="swipe_img" src="images/swipe_interface.png">
-        <div class="spacer"></div>
+        <div id="id_hidden" class="hidden">
+          <img class="iterative_img" src="images/iterative.png">
+          <p>This is a test...</p>
+        </div>
 
-        <div class="project_card">
-          <h1 style="margin-top: 2vh;">Ethanol</h1>
-          <h3 style="margin-bottom: 2vh;">iOS application that connects to hardware over Bluetooth</h3>
+        <div style="margin-bottom: 7vh;" class="project_card">
+          <a style="color: inherit; text-decoration: inherit;" href="javascript: showHidden('ps_hidden');">
+            <h1 style="margin-top: 2vh;">Personas and Storyboarding</h1>
+            <h3 style="margin-bottom: 2vh;">Analzying Brown building swipe interfaces</h3>
+          </a>
         </div>
-        <img style="margin-bottom: 3vh;" class="ethanol_img" src="images/ethanol.png">
+        <div id="ps_hidden" class="hidden">
+          <img class="swipe_img" src="images/swipe_interface.png">
+          <p>This is a test...</p>
+        </div>
 
       </div>
       </center>
     </div>
 
-    <div class="spacer"></div>
+    <div class="spacer" style="height: 5vh;"></div>
 
     <div class="seeya_section">
       <img class="seeya" src="images/seeya.png">
