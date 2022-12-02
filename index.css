@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -124,6 +124,7 @@ body {
   width: 100%;
   border-top: 0.5vh solid rgba(0, 0, 0, 0);
   border-bottom: 0.5vh solid yellow;
+  overflow: hidden;
 }
 
 .spacer {
