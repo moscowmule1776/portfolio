@@ -221,17 +221,18 @@ body {
   margin-top: 7vh;
   margin-bottom: 1vh;
   flex: 1;
-  width: 40%;
-  background-color: transparent;
-  outline: 4px solid rgba(255, 255, 255, 0.25);
+  width: 100%;
+  outline: 4px solid #2c3e50;
   user-select: none;
   cursor: pointer;
   z-index: 1;
-  color: white;
+  color: #2c3e50;
 }
 
 .project_card:hover {
   transform: scale(1.025);
+  color: white;
+  outline: 4px solid white;
 }
 
 .hidden {
