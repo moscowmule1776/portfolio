@@ -13,7 +13,7 @@
       <div class="top_lane">
         <img class="police" src="images/police.png">
         <img class="portfolio_img" src="images/portfolio.png">
-        <a class="work_zone_link" href="javascript: document.getElementById('work').scrollIntoView(true);"><img class="work_zone" src="images/work_zone.png"></a>
+        <a class="work_zone_link" href="javascript: document.getElementById('work').scrollIntoView(true); sleep(500).then(() => {showAllHidden();});"><img class="work_zone" src="images/work_zone.png"></a>
       </div>
 
       <div class="road">
@@ -52,59 +52,128 @@
       <img class="work" src="images/work.png">
       <img class="cone2" src="images/cone.png">
     </div>
-    <div style="background-color: rgba(255, 255, 255, .1); padding-bottom: 0px; padding-top: 0px;" class="new_lane">
+    <div style="background-color: rgba(255, 255, 255, 0); padding-bottom: 0px; padding-top: 0px; padding-left: 5vh; padding-right: 5vh;" class="new_lane">
       <center>
       <div class="projects">
 
-        <div class="project_card">
+        <div id="dev" class="project_card">
           <a style="color: inherit; text-decoration: inherit;" href="javascript: showHidden('dev_hidden');">
             <h1 style="margin-top: 2vh;">Development</h1>
-            <h3 style="margin-bottom: 2vh;">React webpage with content filtering and sorting</h3>
+            <h3>React webpage with content filtering and sorting</h3>
+            <img id="race_car_dev" style="pointer-events: none; position: relative; top: 3.3vh;" height="70vh" src="images/race_car1.png">
           </a>
         </div>
         <div id="dev_hidden" class="hidden">
           <div class="project_view">
-            <h3 style="border-bottom: 0.5vh solid rgba(255, 255, 255, 0.25); margin-bottom: 2vh;">For this assignment, I created a drag racing results page with filter, sort, and aggregation functionality</h3>
+            <h2>The Task</h2>
+            <h3>
+            For this UI/UX assignment, students were tasked with creating an interactive interface using interface components, and tying them to an internal data state, with an emphasis on functionality and usability. I developed a drag racing results page with filter, sort, and aggregation functionality built with React JS.
+            </h3>
+            <img style="margin-top: 4vh; pointer-events: none;" width="75%" src="images/development.png">
+            <h2 style="margin-top: 3vh;">My Implementation</h2>
+            <h3>
+            The website parses and renders JSON data of different cars with different engines (V6, V8, V10, I5, I6) and induction methods (supercharged, turbocharged, naturally aspirated), allowing them to be sorted in order by fastest 1/4 mile trap speed or elapsed time.
+            In drag racing, elapsed time is the time it takes a vehicle to accelerate from a stop and travel a certain distance (1/4 mile in this case), and trap speed is the speed at which the vehicle is traveling at the time it reaches the specific distance.
+            </h3>
+            <h2 style="margin-top: 3vh;">Usability and Functionality</h2>
+            <h3>
+            I designed my website's layout to make selecting and clearing filtering or sorting criteria quick and easy. The interactive menu on the left hand side of the screen utilizes different colors to show the state of selected items, and the content view made up by cards of each car takes up the remaining right hand side of the screen.
+            </h3>
+            <h2 style="margin-top: 3vh;">View My Handin</h2>
+            <h3 style="border-bottom: 0.5vh solid rgba(255, 255, 255, 0.25); margin-bottom: 2vh;">
+            My deployed website can be accessed here: <a style="color: white;" target="blank" href="https://moscowmule1776.github.io/development/">https://moscowmule1776.github.io/development/</a>
+            </h3>
             <!-- <img class="development_img" src="images/development.png"> -->
           </div>
         </div>
 
-        <div class="project_card">
+        <div id="eth" class="project_card">
           <a style="color: inherit; text-decoration: inherit;" href="javascript: showHidden('eth_hidden');">
             <h1 style="margin-top: 2vh;">Ethanol</h1>
             <h3 style="margin-bottom: 2vh;">iOS application with Bluetooth sensor connectivity</h3>
+            <img id="race_car_eth" style="pointer-events: none; position: relative; top: 1.2vh;" height="70vh" src="images/race_car2.png">
           </a>
         </div>
         <div id="eth_hidden" class="hidden">
           <div class="project_view">
-            <h3 style="border-bottom: 0.5vh solid rgba(255, 255, 255, 0.25); margin-bottom: 2vh;">For this assignment, I created a drag racing results page with filter, sort, and aggregation functionality</h3>
-
+            <img style="margin-top: 4vh; float: left; margin-right: 8vh; border-radius: 10px; pointer-events: none;" width="18%" src="images/ethanol.png">
+            <h2>The Task</h2>
+            <h3>
+            For this UI/UX assignment, students were tasked with creating an interactive interface using interface components, and tying them to an internal data state, with an emphasis on functionality and usability. I developed a drag racing results page with filter, sort, and aggregation functionality built with React JS.
+            </h3>
+            <h2 style="margin-top: 3vh;">My Implementation</h2>
+            <h3>
+            The website parses and renders JSON data of different cars with different engines (V6, V8, V10, I5, I6) and induction methods (supercharged, turbocharged, naturally aspirated), allowing them to be sorted in order by fastest 1/4 mile trap speed or elapsed time.
+            In drag racing, elapsed time is the time it takes a vehicle to accelerate from a stop and travel a certain distance (1/4 mile in this case), and trap speed is the speed at which the vehicle is traveling at the time it reaches the specific distance.
+            </h3>
+            <h2 style="margin-top: 3vh;">Usability and Functionality</h2>
+            <h3>
+            I designed my website's layout to make selecting and clearing filtering or sorting criteria quick and easy. The interactive menu on the left hand side of the screen utilizes different colors to show the state of selected items, and the content view made up by cards of each car takes up the remaining right hand side of the screen.
+            </h3>
+            <h2 style="margin-top: 3vh;">View My Handin</h2>
+            <h3 style="border-bottom: 0.5vh solid rgba(255, 255, 255, 0.25); margin-bottom: 2vh;">
+            My deployed website can be accessed here: <a style="color: white;" target="blank" href="https://moscowmule1776.github.io/development/">https://moscowmule1776.github.io/development/</a>
+            </h3>
             <!-- <img style="margin-bottom: 3vh;" class="ethanol_img" src="images/ethanol.png"> -->
           </div>
         </div>
 
-        <div class="project_card">
+        <div id="id" class="project_card">
           <a style="color: inherit; text-decoration: inherit;" href="javascript: showHidden('id_hidden');">
             <h1 style="margin-top: 2vh;">Iterative Design</h1>
-            <h3 style="margin-bottom: 2vh;">Design and improving a website for a startup</h3>
+            <h3 style="margin-bottom: 2vh;">Designing and improving a website for a startup</h3>
+            <img id="race_car_id" style="pointer-events: none; position: relative; top: 0vh;" height="79vh" src="images/race_car3.png">
           </a>
         </div>
         <div id="id_hidden" class="hidden">
           <div class="project_view">
-            <h3 style="border-bottom: 0.5vh solid rgba(255, 255, 255, 0.25); margin-bottom: 2vh;">For this assignment, I created a drag racing results page with filter, sort, and aggregation functionality</h3>
+            <h2>The Task</h2>
+            <h3>
+            For this UI/UX assignment, students were tasked with creating an interactive interface using interface components, and tying them to an internal data state, with an emphasis on functionality and usability. I developed a drag racing results page with filter, sort, and aggregation functionality built with React JS.
+            </h3>
+            <h2 style="margin-top: 3vh;">My Implementation</h2>
+            <h3>
+            The website parses and renders JSON data of different cars with different engines (V6, V8, V10, I5, I6) and induction methods (supercharged, turbocharged, naturally aspirated), allowing them to be sorted in order by fastest 1/4 mile trap speed or elapsed time.
+            In drag racing, elapsed time is the time it takes a vehicle to accelerate from a stop and travel a certain distance (1/4 mile in this case), and trap speed is the speed at which the vehicle is traveling at the time it reaches the specific distance.
+            </h3>
+            <h2 style="margin-top: 3vh;">Usability and Functionality</h2>
+            <h3>
+            I designed my website's layout to make selecting and clearing filtering or sorting criteria quick and easy. The interactive menu on the left hand side of the screen utilizes different colors to show the state of selected items, and the content view made up by cards of each car takes up the remaining right hand side of the screen.
+            </h3>
+            <h2 style="margin-top: 3vh;">View My Handin</h2>
+            <h3 style="border-bottom: 0.5vh solid rgba(255, 255, 255, 0.25); margin-bottom: 2vh;">
+            My deployed website can be accessed here: <a style="color: white;" target="blank" href="https://moscowmule1776.github.io/development/">https://moscowmule1776.github.io/development/</a>
+            </h3>
             <!-- <img class="iterative_img" src="images/iterative.png"> -->
           </div>
         </div>
 
-        <div class="project_card">
+        <div id="ps" class="project_card">
           <a style="color: inherit; text-decoration: inherit;" href="javascript: showHidden('ps_hidden');">
             <h1 style="margin-top: 2vh;">Personas and Storyboarding</h1>
             <h3 style="margin-bottom: 2vh;">Analzying Brown building swipe interfaces</h3>
+            <img id="race_car_ps" style="pointer-events: none; position: relative; top: 0vh;" height="79.5vh" src="images/race_car4.png">
           </a>
         </div>
         <div id="ps_hidden" class="hidden">
           <div class="project_view">
-            <h3 style="border-bottom: 0.5vh solid rgba(255, 255, 255, 0.25); margin-bottom: 2vh;">For this assignment, I created a drag racing results page with filter, sort, and aggregation functionality</h3>
+            <h2>The Task</h2>
+            <h3>
+            For this UI/UX assignment, students were tasked with creating an interactive interface using interface components, and tying them to an internal data state, with an emphasis on functionality and usability. I developed a drag racing results page with filter, sort, and aggregation functionality built with React JS.
+            </h3>
+            <h2 style="margin-top: 3vh;">My Implementation</h2>
+            <h3>
+            The website parses and renders JSON data of different cars with different engines (V6, V8, V10, I5, I6) and induction methods (supercharged, turbocharged, naturally aspirated), allowing them to be sorted in order by fastest 1/4 mile trap speed or elapsed time.
+            In drag racing, elapsed time is the time it takes a vehicle to accelerate from a stop and travel a certain distance (1/4 mile in this case), and trap speed is the speed at which the vehicle is traveling at the time it reaches the specific distance.
+            </h3>
+            <h2 style="margin-top: 3vh;">Usability and Functionality</h2>
+            <h3>
+            I designed my website's layout to make selecting and clearing filtering or sorting criteria quick and easy. The interactive menu on the left hand side of the screen utilizes different colors to show the state of selected items, and the content view made up by cards of each car takes up the remaining right hand side of the screen.
+            </h3>
+            <h2 style="margin-top: 3vh;">View My Handin</h2>
+            <h3 style="border-bottom: 0.5vh solid rgba(255, 255, 255, 0.25); margin-bottom: 2vh;">
+            My deployed website can be accessed here: <a style="color: white;" target="blank" href="https://moscowmule1776.github.io/development/">https://moscowmule1776.github.io/development/</a>
+            </h3>
             <!-- <img class="swipe_img" src="images/swipe_interface.png"> -->
           </div>
         </div>
