@@ -133,8 +133,8 @@ body {
 }
 
 .new_lane {
-  padding-left: 10vh;
-  padding-right: 10vh;
+  padding-left: 21vh;
+  padding-right: 21vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
   font-size: 2vh;
@@ -220,7 +220,7 @@ body {
   border-radius: 10px;
   margin-top: 7vh;
   margin-bottom: 1vh;
-  width: 51%;
+  width: 83%;
   height: 30vh;
   outline: 4px solid rgba(255, 255, 255, 0.25);
   user-select: none;
